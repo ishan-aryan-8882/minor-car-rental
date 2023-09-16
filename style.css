@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Abel&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Abel&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 * {
     padding: 0;
     margin: 0;
@@ -1465,6 +1465,20 @@ align-items: center;
     }
 }
 
+
+.cont-w{
+    position: relative;
+}
+
+.cont-w::before{
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: url('https://demo.xpeedstudio.com/carrental/home-v4/wp-content/uploads/sites/5/2020/07/contact-bg.png') no-repeat top/cover;
+    z-index: -1;
+    opacity: 1;
+}
+
 .trap{
     background-color: transparent;
 }
@@ -1507,7 +1521,7 @@ align-items: center;
 }
 
 .map-container{
-    margin-bottom: 50px;
+    margin-bottom: 80px;
     overflow: hidden;
 }
 
@@ -1524,4 +1538,107 @@ align-items: center;
     to{
         transform: translateY(0);
     }
+}
+
+
+.contact-form{
+    overflow: hidden;
+    /* border: 2px solid black; */
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.cfc{
+    display: flex;
+    justify-content: space-around;
+    position: relative;
+}
+
+.cfc > *{
+    font-family: 'Rubik', sans-serif;
+}
+
+.cls,.crs{
+    flex: 0 1 35%;
+    /* border: 2px solid black; */
+    padding: 2px;
+    display: flex;
+    flex-direction: column;
+}
+
+.cls{
+    flex: 0 1 30%;
+    gap: 30px;
+}
+
+.crs{
+    /* gap: 30px; */
+}
+
+.full-n,.ea,.tmai{
+    width: 100%;
+}
+
+.cls h2{
+    font-weight: 800;
+    font-size: 3rem;
+}
+
+.cls h4{
+    font-weight: 300;
+    font-size: 1rem;
+    text-align: left;
+    color: gray;
+    white-space: 10px;
+}
+
+.crs label{
+    font-weight: 600;
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+.crs input[type='text'],.crs textarea {
+    border: none;
+    outline: none;
+    background: rgb(238, 238, 238);
+    padding: 20px;
+    margin-bottom: 40px;
+}
+
+.crs textarea{
+    padding: 20px 10px 0 10px;
+    max-height: 70%;
+}
+
+.crs ::placeholder{
+    color: gray;
+}
+
+.crs .btn-cont{
+    margin: 0; 
+    padding: 0;
+}
+
+.crs button{
+    width: fit-content;
+    position: relative;
+    overflow: hidden;
+    margin: 0;
+}
+
+.crs button::before{
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(90deg,rgba(255, 255, 255, 0.998),rgba(255, 255, 255, 0.3));
+    width: 50%;
+    height: 200%;
+    filter: blur(5px);
+    transform: translateX(-100%);
+    transition: 0.4s;
+}
+
+.crs button:hover::before{
+    transform: translateX(210%);
 }
