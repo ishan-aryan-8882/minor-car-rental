@@ -110,3 +110,22 @@ cross.addEventListener('click',()=>{
   sic.style.opacity='0'
   sic.style.transform='translateY(-400%)'
 })
+
+const creds = () => {
+  let username = document.querySelector("#usern").value; // Get the value of the username input
+  let password = document.querySelector("#passw").value; // Get the value of the password input
+  let credbtn = document.querySelector(".si");
+
+  if (username === 'user' && password === 'user') {
+    // Define body and sic if they are not already defined
+    let body = document.querySelector("body");
+    let sic = document.querySelector(".sign-in");
+
+    body.classList.remove("home-pg");
+    sic.style.opacity = '0';
+    sic.style.transform = 'translateY(-400%)';
+  } else {
+    alert("Wrong Credentials");
+  }
+}
+
