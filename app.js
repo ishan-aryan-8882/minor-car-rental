@@ -98,5 +98,5 @@ let body = document.querySelector("body")
 const sibo = () => {
   body.classList.add("home-pg")
   sic.style.opacity='1'
-  sic.style.display='block'
+  sic.style.transform='translateY(0%)'
 }
