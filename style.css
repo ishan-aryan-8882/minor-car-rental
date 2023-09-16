@@ -228,6 +228,7 @@ header ion-icon {
 .hs-ls-box p {
     font-weight: 700;
     font-size: 52px;
+    width: 80%;
 }
 
 .hs-ls-box p span {
@@ -241,6 +242,7 @@ header ion-icon {
     font-weight: 400;
     color: #817F91;
     text-align: justify;
+    width: 80%;
 }
 
 .btn-cont {
@@ -360,6 +362,12 @@ header ion-icon {
         flex-direction: column-reverse;
     }
 
+    .hs-ls-box p {
+        width: 100%;
+        text-align: center;
+        justify-content: center;
+    }
+
     .hs-ls-box {
         flex: 0 1 100%;
         text-align: center;
@@ -377,6 +385,13 @@ header ion-icon {
 
     .btn-cont {
         justify-content: center;
+    }
+}
+
+@media (max-width:316px) {
+    .btn-cont{
+        flex-direction: column;
+        align-items: center;
     }
 }
 
