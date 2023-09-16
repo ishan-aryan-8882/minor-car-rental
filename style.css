@@ -1666,3 +1666,7 @@ align-items: center;
         gap: 20px   ;
     }
 }
+
+.cont-w footer{
+    margin-top: 80px;
+}
