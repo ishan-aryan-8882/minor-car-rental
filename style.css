@@ -1505,3 +1505,23 @@ align-items: center;
     font-weight: 400;
     font-size: 18px;
 }
+
+.map-container{
+    margin-bottom: 50px;
+    overflow: hidden;
+}
+
+.mapouter{
+    width: 100%;
+    transform: translateY(100%);
+    transform: translateY(100%);
+    animation: mapsan 1s forwards;
+    animation-delay: 0.5s;
+    filter: grayscale(70%);
+}
+
+@keyframes mapsan {
+    to{
+        transform: translateY(0);
+    }
+}
