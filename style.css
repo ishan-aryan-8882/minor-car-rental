@@ -740,7 +740,7 @@ header ion-icon {
     content: '';
     position: absolute;
     inset: 0;
-    background: url('https://hips.hearstapps.com/hmg-prod/images/rp-bentley-continental-gt-v8-20-2-1570633139.jpg') no-repeat top/ cover;
+    /* background: url('https://hips.hearstapps.com/hmg-prod/images/rp-bentley-continental-gt-v8-20-2-1570633139.jpg') no-repeat top/ cover; */
     transform: rotateY(180deg);
     opacity: 0.2;
     z-index: -1;
@@ -1463,4 +1463,45 @@ align-items: center;
         flex-direction: column;
         width: 100%;
     }
+}
+
+.trap{
+    background-color: transparent;
+}
+
+.trap nav{
+    background-color: transparent;
+}
+
+.location-main-header{
+    position: relative;
+}
+
+.location-main-header::after{
+    content: '';
+    position: absolute;
+    background: url('https://hips.hearstapps.com/hmg-prod/images/rp-bentley-continental-gt-v8-20-2-1570633139.jpg') no-repeat center/cover;
+    inset: 0;
+    opacity: 0.2;
+}
+
+.location-main-header .top-display h1{
+    color: #FD662F;
+}
+
+.location-main-header .top-display h1::after{
+    content: '';
+}
+
+.location-main-header .top-display h1{
+    font-weight: 700;
+}
+
+.location-main-header .top-display{
+    line-height: 10px;
+}
+
+.location-main-header .top-display h4{
+    font-weight: 400;
+    font-size: 18px;
 }
