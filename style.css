@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Abel&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Abel&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
 * {
     padding: 0;
     margin: 0;
@@ -1280,7 +1281,7 @@ footer {
 
 .footer {
     display: flex;
-    justify-content:space-evenly;
+    justify-content: space-evenly;
     flex-wrap: wrap;
     transform: translateY(100%);
 }
@@ -1318,7 +1319,7 @@ footer {
     gap: 5px;
 }
 
-.nr p:nth-child(2){
+.nr p:nth-child(2) {
     font-size: 14px;
     color: gray;
     margin-bottom: 30px;
@@ -1330,7 +1331,7 @@ footer {
     font-weight: 800;
 }
 
-.cy p{
+.cy p {
     text-transform: capitalize;
 }
 
@@ -1354,17 +1355,17 @@ footer {
     color: gray;
 }
 
-.footer hr{
+.footer hr {
     width: 90%;
     border-width: 1px;
     border-color: rgba(128, 128, 128, 0.742);
     margin: auto;
     margin-top: 40px;
-    margin-bottom:20px;
+    margin-bottom: 20px;
     display: inline-block;
 }
 
-.copyr{
+.copyr {
     width: 90%;
     margin: auto;
     display: flex;
@@ -1372,26 +1373,27 @@ footer {
     margin-bottom: 10px;
 }
 
-.copyr span:nth-child(1){
-flex: 0 1 70%;
-font-size: 13px;
-display: flex;
-align-items: center;
+.copyr span:nth-child(1) {
+    flex: 0 1 70%;
+    font-size: 13px;
+    display: flex;
+    align-items: center;
 }
 
-.copyr span:nth-child(1) p{
+.copyr span:nth-child(1) p {
     font-weight: 800;
     margin: 0;
 }
-.copyr span:nth-child(2){
-flex: 0 1 30%;
-display: flex;
-justify-content: flex-end;
-gap: 10px;
-align-items: center;
+
+.copyr span:nth-child(2) {
+    flex: 0 1 30%;
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+    align-items: center;
 }
 
-.copyr span:nth-child(1) p:nth-child(2){
+.copyr span:nth-child(1) p:nth-child(2) {
     font-weight: 300;
 }
 
@@ -1403,29 +1405,29 @@ align-items: center;
 }
 
 @media (max-width:800px) {
-    .nr p:nth-child(2){
+    .nr p:nth-child(2) {
         text-align: left;
     }
 }
 
 @media (max-width:700px) {
-    .footer{
+    .footer {
         flex-direction: column;
         gap: 60px;
     }
 
-    .nr span, .nr p{
+    .nr span, .nr p {
         width: 100%;
     }
 
-    .nr p:nth-child(2){
+    .nr p:nth-child(2) {
         display: flex;
         justify-content: center;
         margin-bottom: 10px;
         text-align: center;
     }
 
-    .nr p{
+    .nr p {
         display: flex;
         justify-content: center;
     }
@@ -1435,30 +1437,31 @@ align-items: center;
         text-align: center;
     }
 
-    .footer span, .footer p{
+    .footer span, .footer p {
         text-align: center;
     }
 }
 
 @media (max-width:402px) {
-    .copyr{
+    .copyr {
         flex-direction: column;
         gap: 10px;
     }
-    .copyr span{
+
+    .copyr span {
         /* border: 2px solid black; */
-        width:100%;
+        width: 100%;
         display: flex;
         justify-content: center;
     }
-    .copyr span:nth-child(2)
-    {
+
+    .copyr span:nth-child(2) {
         justify-content: center;
     }
 }
 
 @media (max-width:273px) {
-    .copyr span:nth-child(1)>*{
+    .copyr span:nth-child(1)>* {
         display: flex;
         flex-direction: column;
         width: 100%;
@@ -1466,11 +1469,11 @@ align-items: center;
 }
 
 
-.cont-w{
+.cont-w {
     position: relative;
 }
 
-.cont-w::before{
+.cont-w::before {
     content: '';
     position: absolute;
     inset: 0;
@@ -1479,19 +1482,19 @@ align-items: center;
     opacity: 1;
 }
 
-.trap{
+.trap {
     background-color: transparent;
 }
 
-.trap nav{
+.trap nav {
     background-color: transparent;
 }
 
-.location-main-header{
+.location-main-header {
     position: relative;
 }
 
-.location-main-header::after{
+.location-main-header::after {
     content: '';
     position: absolute;
     background: url('https://hips.hearstapps.com/hmg-prod/images/rp-bentley-continental-gt-v8-20-2-1570633139.jpg') no-repeat center/cover;
@@ -1499,33 +1502,33 @@ align-items: center;
     opacity: 0.2;
 }
 
-.location-main-header .top-display h1{
+.location-main-header .top-display h1 {
     color: #FD662F;
 }
 
-.location-main-header .top-display h1::after{
+.location-main-header .top-display h1::after {
     content: '';
 }
 
-.location-main-header .top-display h1{
+.location-main-header .top-display h1 {
     font-weight: 700;
 }
 
-.location-main-header .top-display{
+.location-main-header .top-display {
     line-height: 10px;
 }
 
-.location-main-header .top-display h4{
+.location-main-header .top-display h4 {
     font-weight: 400;
     font-size: 18px;
 }
 
-.map-container{
+.map-container {
     margin-bottom: 80px;
     overflow: hidden;
 }
 
-.mapouter{
+.mapouter {
     width: 100%;
     transform: translateY(100%);
     transform: translateY(100%);
@@ -1535,31 +1538,31 @@ align-items: center;
 }
 
 @keyframes mapsan {
-    to{
+    to {
         transform: translateY(0);
     }
 }
 
 
-.contact-form{
+.contact-form {
     overflow: hidden;
     /* border: 2px solid black; */
-    margin-bottom: 20px;
+    margin-bottom: 70px;
     position: relative;
 }
 
-.cfc{
+.cfc {
     display: flex;
     justify-content: space-evenly;
     position: relative;
     transform: translateY(100%);
 }
 
-.cfc > *{
+.cfc>* {
     font-family: 'Rubik', sans-serif;
 }
 
-.cls,.crs{
+.cls, .crs {
     flex: 0 1 35%;
     /* border: 2px solid black; */
     padding: 2px;
@@ -1567,26 +1570,26 @@ align-items: center;
     flex-direction: column;
 }
 
-.cls{
+.cls {
     flex: 0 1 30%;
     gap: 30px;
 }
 
-.crs{
+.crs {
     /* gap: 30px; */
 }
 
-.full-n,.ea,.tmai{
+.full-n, .ea, .tmai {
     width: 100%;
 }
 
-.cls h2{
+.cls h2 {
     font-weight: 800;
     font-size: 3rem;
     text-align: left;
 }
 
-.cls h4{
+.cls h4 {
     font-weight: 300;
     font-size: 1rem;
     text-align: left;
@@ -1594,13 +1597,13 @@ align-items: center;
     white-space: 10px;
 }
 
-.crs label{
+.crs label {
     font-weight: 600;
     font-size: 16px;
     margin-bottom: 5px;
 }
 
-.crs input[type='text'],.crs textarea {
+.crs input[type='text'], .crs textarea {
     border: none;
     outline: none;
     background: rgb(238, 238, 238);
@@ -1608,32 +1611,32 @@ align-items: center;
     margin-bottom: 40px;
 }
 
-.crs textarea{
+.crs textarea {
     padding: 20px 10px 0 10px;
     max-height: 70%;
 }
 
-.crs ::placeholder{
+.crs ::placeholder {
     color: gray;
 }
 
-.crs .btn-cont{
-    margin: 0; 
+.crs .btn-cont {
+    margin: 0;
     padding: 0;
 }
 
-.crs button{
+.crs button {
     width: fit-content;
     position: relative;
     overflow: hidden;
     margin: 0;
 }
 
-.crs button::before{
+.crs button::before {
     content: '';
     position: absolute;
     inset: 0;
-    background: linear-gradient(90deg,rgba(255, 255, 255, 0.998),rgba(255, 255, 255, 0.3));
+    background: linear-gradient(90deg, rgba(255, 255, 255, 0.998), rgba(255, 255, 255, 0.3));
     width: 50%;
     height: 200%;
     filter: blur(5px);
@@ -1641,32 +1644,148 @@ align-items: center;
     transition: 0.4s;
 }
 
-.crs button:hover::before{
+.crs button:hover::before {
     transform: translateX(210%);
 }
 
 @media (max-width:1377px) {
-    .cfc{
+    .cfc {
         justify-content: space-between;
         padding: 0 50px;
     }
-    .crs{
+
+    .crs {
         flex: 0 1 50%;
     }
 }
+
 @media (max-width:860px) {
-    .cfc{
+    .cfc {
         padding: 0 15px;
     }
 }
 
 @media (max-width:800px) {
-    .cfc{
+    .cfc {
         flex-direction: column;
-        gap: 20px   ;
+        gap: 20px;
     }
 }
 
-.cont-w footer{
+.cont-w footer {
     margin-top: 80px;
+}
+
+.ctbc {
+    overflow: hidden;
+}
+
+.ctb {
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    padding: 40px 0;
+    transform: translateY(100%);
+}
+
+.ctb::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.704), rgba(0, 0, 0, 0.727)), url('https://images.unsplash.com/photo-1485291571150-772bcfc10da5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OXx8YmxhY2slMjBjYXJ8ZW58MHx8MHx8fDA%3D&w=1000&q=80') no-repeat center/cover;
+    opacity: 0.8;
+    z-index: -1;
+}
+
+.lefts {
+    flex: 0 1 40%;
+}
+
+.rights {
+    flex: 0 1 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0;
+}
+
+.ctb .lefts h1 {
+    color: white;
+    font-weight: 800;
+    font-size: 45px;
+    padding: 10px;
+}
+
+.ctb .rights {
+    color: white;
+}
+
+.rights p:nth-child(1) {
+    width: 100%;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    /* border: 2px solid white; */
+    justify-content: center;
+    gap: 10px;
+    margin: 0;
+}
+
+.rights P:nth-child(2) {
+    width: 100%;
+    font-size: 40px;
+    font-weight: 800;
+    color: #FD662F;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    margin: 0;
+    /* border: 2px solid white; */
+}
+
+@media (max-width:1347px) {
+    .ctb {
+        justify-content: space-between;
+        padding: 10px;
+    }
+
+    .rights p:nth-child(1) {
+        justify-content: end;
+        padding: 0 10px;
+    }
+
+    .rights p:nth-child(2) {
+        justify-content: end;
+        padding: 0 10px;
+    }
+}
+
+@media (max-width:879px) {
+    .ctb{
+        flex-direction: column;
+        padding: 10px 0;
+    }
+
+    .lefts h1{
+        text-align: center;
+        width: 100%;
+    }
+
+    .rights p:nth-child(1) {
+        justify-content: center;
+    }
+
+    .rights p:nth-child(2) {
+        justify-content: center;
+    }
+}
+
+@media (max-width:342px) {
+    .rights p:nth-child(2) {
+        font-size: 30px;
+        text-align: center;
+    }
 }
