@@ -93,39 +93,41 @@ window.addEventListener("scroll", () => {
   }
 });
 
-let sic = document.querySelector(".sign-in")
-let body = document.querySelector("body")
-let hs = document.querySelector("#home")
+let sic = document.querySelector(".sign-in");
+let body = document.querySelector("body");
+let hs = document.querySelector("#home");
 // const homePgBefore = document.querySelector('.home-pg::before');
 const sibo = () => {
-  body.classList.add("home-pg")
+  body.classList.add("home-pg");
   // homePgBefore.style.backdropFilter = 'blur(50px)';
-  sic.style.opacity='1'
-  sic.style.transform='translateY(0%)'
-}
+  sic.style.opacity = "1";
+  sic.style.transform = "translateY(0%)";
+};
 
-let cross = document.querySelector(".cross")
-cross.addEventListener('click',()=>{
-  body.classList.remove("home-pg")
-  sic.style.opacity='0'
-  sic.style.transform='translateY(-400%)'
-})
+let cross = document.querySelector(".cross");
+cross.addEventListener("click", () => {
+  body.classList.remove("home-pg");
+  sic.style.opacity = "0";
+  sic.style.transform = "translateY(-400%)";
+});
 
 const creds = () => {
   let username = document.querySelector("#usern").value; // Get the value of the username input
   let password = document.querySelector("#passw").value; // Get the value of the password input
   let credbtn = document.querySelector(".si");
 
-  if (username === 'user' && password === 'user') {
+  if (username === "user" && password === "user") {
     // Define body and sic if they are not already defined
     let body = document.querySelector("body");
     let sic = document.querySelector(".sign-in");
-
+    let sin = document.querySelector(".sin");
     body.classList.remove("home-pg");
-    sic.style.opacity = '0';
-    sic.style.transform = 'translateY(-400%)';
-  } else {
+    sic.style.opacity = "0";
+    sic.style.transform = "translateY(-400%)";
+    sin.style.display='none'
+  } 
+  else {
     alert("Wrong Credentials");
+    password = "";
   }
-}
-
+};
