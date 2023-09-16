@@ -1897,10 +1897,11 @@ footer {
 }
 
 .txt form label{
-    width: 90%;
+    width: 99%;
     text-align: left;
     font-size: 14px;
     /* color: #FD662F; */
+    /* border: 2px solid ; */
 }
 
 .txt form input{
@@ -1910,7 +1911,7 @@ footer {
     border: none;
     background: rgba(255, 255, 255, 0.758);
     padding: 10px;
-    border-radius: 10px;
+    border-radius: 7px;
     /* border: 1px solid #fd662f6d; */
 }
 
