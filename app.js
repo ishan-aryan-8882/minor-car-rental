@@ -95,8 +95,19 @@ window.addEventListener("scroll", () => {
 
 let sic = document.querySelector(".sign-in")
 let body = document.querySelector("body")
+let hs = document.querySelector("#home")
+// const homePgBefore = document.querySelector('.home-pg::before');
 const sibo = () => {
   body.classList.add("home-pg")
+  // homePgBefore.style.backdropFilter = 'blur(50px)';
   sic.style.opacity='1'
   sic.style.transform='translateY(0%)'
 }
+
+let cross = document.querySelector(".cross")
+cross.addEventListener('click',()=>{
+  body.classList.remove("home-pg")
+  sic.style.opacity='0'
+  sic.style.transform='translateY(-400%)'
+})
+
