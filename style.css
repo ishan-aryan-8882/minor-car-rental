@@ -1826,7 +1826,6 @@ footer {
 .home-pg{
     position: relative;
     height: 100vh;
-    transition: 2s;
 }
 
 .home-pg::before{
@@ -1850,7 +1849,9 @@ footer {
     z-index: 99;
     overflow: hidden;
     opacity: 0;
-    transition: 0.5s;
+    display: none;
+    transition: 1s;
+    z-index: 99999;
 }
 
 .siw{
@@ -1865,9 +1866,9 @@ footer {
     content: '';
     inset: 0;
     background: url('https://media.tenor.com/jKE-CQ_fhbkAAAAd/space.gif') no-repeat center/cover;
-    /* background: rgb(255, 173, 173); */
+    background: rgb(255, 196, 196);
     z-index: -1;
-    opacity: 0.3;
+    /* opacity: 0.3; */
     /* filter: blur(1px); */
 }
 
