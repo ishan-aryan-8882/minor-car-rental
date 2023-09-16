@@ -1822,3 +1822,124 @@ footer {
         text-align: center;
     }
 }
+
+.home-pg{
+    position: relative;
+    height: 100vh;
+    transition: 2s;
+}
+
+.home-pg::before{
+    position: absolute;
+    content: '';
+    inset: 0;
+    background: rgba(255, 255, 255, 0.414);
+    backdrop-filter: blur(50px);
+    z-index: 9;
+}
+
+.sign-in{
+    position: absolute;
+    width: 25vw;
+    /* height: 50vh; */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    /* border: 2px solid rgb(162, 162, 162); */
+    border-radius: 10px;
+    z-index: 99;
+    overflow: hidden;
+    opacity: 0;
+    transition: 0.5s;
+}
+
+.siw{
+    position: relative;
+    color: black;
+    height: 100%;
+    padding: 20px 0;
+}
+
+.siw::before{
+    position: absolute;
+    content: '';
+    inset: 0;
+    background: url('https://media.tenor.com/jKE-CQ_fhbkAAAAd/space.gif') no-repeat center/cover;
+    /* background: rgb(255, 173, 173); */
+    z-index: -1;
+    opacity: 0.3;
+    /* filter: blur(1px); */
+}
+
+.siw .header-si{
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+    font-size: 25px;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+.txt{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.txt form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+    width: 70%;
+    margin: auto;
+}
+
+.txt form label{
+    width: 90%;
+    text-align: left;
+    font-size: 14px;
+    /* color: #FD662F; */
+}
+
+.txt form input{
+    width: 100%;
+    margin: auto;
+    outline: none;
+    border: none;
+    background: rgba(255, 255, 255, 0.758);
+    padding: 10px;
+    border-radius: 10px;
+    /* border: 1px solid #fd662f6d; */
+}
+
+.txt .si{
+    width: 70%;
+    margin: auto;
+    color: white;
+    background: linear-gradient(90deg,#FD662F,#ff8c62);
+    border: none;
+    outline: none;
+    padding: 5px 15px;
+    border-radius: 8px;
+    font-size: 17px;
+    position: relative;
+    overflow: hidden;
+}
+
+.si::before{
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(90deg,rgba(255, 255, 255, 0.837),rgba(255, 255, 255, 0.396));
+    width: 50%;
+    transform: translateX(-100%);
+    transition: 0.3s;
+    filter: blur(5px);
+    height: 200vh;
+}
+
+.si:hover::before{
+    transform: translateX(200%);
+}

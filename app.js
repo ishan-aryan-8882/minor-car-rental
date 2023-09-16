@@ -92,3 +92,11 @@ window.addEventListener("scroll", () => {
     ctb.classList.remove("da-an");
   }
 });
+
+let sin = document.querySelector(".sin")
+let sic = document.querySelector(".sign-in")
+let body = document.querySelector("body")
+const sibo = () => {
+  body.classList.add("home-pg")
+  sic.style.opacity='1'
+}
