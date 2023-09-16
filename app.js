@@ -110,4 +110,3 @@ cross.addEventListener('click',()=>{
   sic.style.opacity='0'
   sic.style.transform='translateY(-400%)'
 })
-
