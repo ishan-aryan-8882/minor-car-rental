@@ -72,3 +72,16 @@ window.addEventListener('scroll', () => {
     footerclass.classList.remove("da-an");
   }
 });
+
+let contactForm = document.querySelector(".contact-form");
+let cfc = document.querySelector(".cfc");
+window.addEventListener('scroll', () => {
+  let rect = contactForm.getBoundingClientRect();
+  let mart = rect.top + 50;
+  if ( mart< window.innerHeight) {
+    cfc.classList.add("da-an");
+  }
+  else{
+    cfc.classList.remove("da-an");
+  }
+});

@@ -1550,8 +1550,9 @@ align-items: center;
 
 .cfc{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
     position: relative;
+    transform: translateY(100%);
 }
 
 .cfc > *{
@@ -1582,6 +1583,7 @@ align-items: center;
 .cls h2{
     font-weight: 800;
     font-size: 3rem;
+    text-align: left;
 }
 
 .cls h4{
@@ -1641,4 +1643,26 @@ align-items: center;
 
 .crs button:hover::before{
     transform: translateX(210%);
+}
+
+@media (max-width:1377px) {
+    .cfc{
+        justify-content: space-between;
+        padding: 0 50px;
+    }
+    .crs{
+        flex: 0 1 50%;
+    }
+}
+@media (max-width:860px) {
+    .cfc{
+        padding: 0 15px;
+    }
+}
+
+@media (max-width:800px) {
+    .cfc{
+        flex-direction: column;
+        gap: 20px   ;
+    }
 }
