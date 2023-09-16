@@ -553,6 +553,19 @@ header ion-icon {
     }
 }
 
+@media (max-width:876px) {
+    .hs-ls-box .desc {
+        width: 100%;
+        text-align: center;
+    }
+}
+
+@media (max-width:827px) {
+    .book-car {
+        width: 95%;
+    }
+}
+
 @media (max-width:800px) {
     .booking-car .avail:nth-child(1) {
         flex: 0 1 100%;
@@ -1764,12 +1777,12 @@ footer {
 }
 
 @media (max-width:879px) {
-    .ctb{
+    .ctb {
         flex-direction: column;
         padding: 10px 0;
     }
 
-    .lefts h1{
+    .lefts h1 {
         text-align: center;
         width: 100%;
     }
