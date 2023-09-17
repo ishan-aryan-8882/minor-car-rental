@@ -860,6 +860,7 @@ header ion-icon {
     border-radius: 6px;
     overflow: hidden;
     transition: 0.5s;
+    position: relative;
 }
 
 .card img {
@@ -883,6 +884,11 @@ header ion-icon {
     display: flex;
     justify-content: space-between;
     padding: 10px 30px;
+    height: 40%;
+}
+
+.card:hover .ct1{
+    height: auto;
 }
 
 .ct1 p {
@@ -952,6 +958,7 @@ header ion-icon {
     width: 90%;
     margin: auto;
 }
+
 
 .card-text button {
     width: 100%;

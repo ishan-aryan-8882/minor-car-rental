@@ -125,7 +125,7 @@ const creds = () => {
     sic.style.opacity = "0";
     sic.style.transform = "translateY(-400%)";
     sin.style.display='none'
-    alert('Welcome User ❤')
+    alert('Welcome ❤')
   } 
   else {
     alert("Wrong Credentials");
