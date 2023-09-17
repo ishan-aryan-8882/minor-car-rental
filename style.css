@@ -831,6 +831,7 @@ header ion-icon {
 .models-wrap {
     width: 100%;
     overflow: hidden;
+    margin-bottom: 30px;
 }
 
 .models {
@@ -878,6 +879,7 @@ header ion-icon {
 .card:hover {
     border: none;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+    transform: scale(1.03);
 }
 
 .ct1 {
