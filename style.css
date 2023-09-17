@@ -955,7 +955,6 @@ header ion-icon {
     margin: auto;
 }
 
-
 .card-text button {
     width: 100%;
     margin: 20px auto;
@@ -978,6 +977,10 @@ header ion-icon {
 }
 
 .card button:hover::before {
+    transform: translate(210%);
+}
+
+.card:hover button::before{
     transform: translate(210%);
 }
 
