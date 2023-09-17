@@ -884,13 +884,8 @@ header ion-icon {
     display: flex;
     justify-content: space-between;
     padding: 10px 30px;
-    height: 40%;
 }
 
-.card:hover{
-    transform: scale(1.01);
-    background: white;
-}
 
 .ct1 p {
     flex: 0 1 50%;
