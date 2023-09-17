@@ -887,8 +887,9 @@ header ion-icon {
     height: 40%;
 }
 
-.card:hover .ct1{
-    height: auto;
+.card:hover{
+    transform: scale(1.01);
+    background: white;
 }
 
 .ct1 p {
